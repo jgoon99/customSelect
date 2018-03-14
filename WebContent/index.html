@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<title>CustomSelect-1.0.0</title>
+		<link rel="stylesheet" type="text/css" href="./customSelect-1.0.0/customSelect-1.0.0.css"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>		
+		<script type="text/javascript" src="./customSelect-1.0.0/customSelect-1.0.0.js"></script>
+	</head>
+	<body>
+		<h1>jQuery Custom Select Plug-in</h1>
+		<h4>By Yunsik Choung</h4>
+		<div>
+			<label>This is a normal Select Element.</label>
+			<select>
+				<option value="">Select</option>
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+				<option value="6">Option 6</option>
+				<option value="7">Option 7</option>
+				<option value="8">Option 8</option>
+			</select>
+		</div>
+		<div>
+			<label>This is a custom Select Element. Class: customSelect</label>
+			<select class="customSelect">
+				<option value="">Select</option>
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+				<option value="6">Option 6</option>
+				<option value="7">Option 7</option>
+				<option value="8">Option 8</option>
+			</select>
+		</div>
+		<div>
+			<p>Javascript: $('.customSelect).customSelect();</p>
+			<p>Required jQuery. Before load customSelect.js</p>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$('.customSelect').customSelect();
+		});
+	</script>
+</html>

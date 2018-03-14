@@ -1,0 +1,56 @@
+/**--------------------------------------------------------------
+ * filename : customSelect.css
+ * author : Choung Yunsik
+ * Detail : Cross Browsing Custom Input Items
+--------------------------------------------------------------*/
+@CHARSET "UTF-8";
+.cst-select{ 
+	position: relative;
+	display: inline-block;
+	border: 1px #dadada solid;
+	text-align: left;
+	background: #fff;
+	cursor: pointer;
+	vertical-align: middle;
+	background-image: url('./custom-select-images/down.png');
+	background-position: right 20px center;
+	background-repeat: no-repeat;
+	font-size: 14px;
+	color: inherit;
+	font-family: inherit;
+	padding-right: 46px;
+	padding: 0px 16px;
+	height: 50px;
+	line-height: 50px;
+}
+.cst-option .cst-option-lst.focus,
+.cst-option .cst-option-lst:hover{background-color: #fcfcfc;}
+.cst-select select{
+	position: absolute; 
+	opacity: 0; 
+	top: -9999px;
+	left: -9999px;
+	filter: alpha(opacity=0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.cst-select .cst-label{
+	position: relative;
+	padding-right: 1rem; 
+	float: left;
+	text-align: left;
+}
+.cst-option{
+	background: #fff;
+	border: 1px #dadada solid;
+	display: none;
+	line-height: 1rem;
+	color: inherit;
+	max-height: 400px;
+	overflow-y: auto;
+	cursor: pointer;
+}
+.cst-option .cst-option-lst{
+	position: relative;
+	text-align: left;
+	padding: 13px 16px;
+}
