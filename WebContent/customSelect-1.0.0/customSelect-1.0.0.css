@@ -7,22 +7,24 @@
 .cst-select{ 
 	position: relative;
 	display: inline-block;
-	border: 1px #dadada solid;
+	border: 1px #d5d5d5 solid;
 	text-align: left;
 	background: #fff;
 	cursor: pointer;
 	vertical-align: middle;
 	background-image: url('./custom-select-images/down.png');
-	background-position: right 20px center;
+	background-position: right 1.5rem center;
 	background-repeat: no-repeat;
-	font-size: 14px;
+	font-size: inherit;
 	color: inherit;
 	font-family: inherit;
-	padding-right: 46px;
-	padding: 0px 16px;
-	height: 50px;
-	line-height: 50px;
+	padding: 0rem 3.5rem 0rem 1rem;
+	height: 3rem;
+	line-height: 3rem;
+	overflow: hidden;
 }
+.cst-select:focus{border-color: #5ba89c;}
+.cst-select:hover,
 .cst-option .cst-option-lst.focus,
 .cst-option .cst-option-lst:hover{background-color: #fcfcfc;}
 .cst-select select{
@@ -35,9 +37,13 @@
 }
 .cst-select .cst-label{
 	position: relative;
-	padding-right: 1rem; 
+	width: 100%;
+	display: inline-block;
 	float: left;
 	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 .cst-option{
 	background: #fff;
@@ -45,12 +51,12 @@
 	display: none;
 	line-height: 1rem;
 	color: inherit;
-	max-height: 400px;
+	max-height: 40rem;
 	overflow-y: auto;
 	cursor: pointer;
 }
 .cst-option .cst-option-lst{
 	position: relative;
 	text-align: left;
-	padding: 13px 16px;
+	padding: 1rem 1.5rem;
 }
