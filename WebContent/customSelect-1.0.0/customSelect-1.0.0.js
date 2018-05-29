@@ -130,6 +130,7 @@ var _cst = {
 			}
 		});
 		select.trigger('change');
+		select.trigger('blur');
 		$(me).parent().slideUp(50);
 		$(me).parent().remove('.cst-option');
 	},
